@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-image-set('Begins.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 80vh;
+    height: 70%;
+}
+
+.App-title {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.search-box {
+    text-align: center;
+    width: 100%;
+}
+
+.search-box input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    font-size: 20px;
+    padding: 7px;
+    width: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #11E6FC;
+    border: 1px solid black;
+}
+
+.error-text {
+    font-size: 17px;
+    color: rgb(251, 34, 34);
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.temp-container {
+    text-align: center;
+}
+
+.temp-container p {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.temp-container span {
+    padding-left: 10px;
+    font-size: 40px;
+}
+
+.weather-description {
+    font-size: 17px;
+}
+
+.advice-box {
+    text-align: center;
+}
+
+.advice-box h3 {
+    font-size: 20px;
+}
+
+.advice-box p {
+    font-size: 17px;
+}
+
+.advice-box button{
+    background-color: #F6960A;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 7px 8px 7px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.sunny-bg {
+    background: url("Sunny.jpg") center/cover no-repeat;
+}
+
+.rainy-bg {
+    background: url("Rain.jpg") center/cover no-repeat;
+}
+
+.snowy-bg {
+    background: url("Snowy.jpg") center/cover no-repeat;
+}
+
+.cloudy-bg {
+    background: url("Cloudy.jpg") center/cover no-repeat;
+}
+
+.thunderstrom-bg {
+    background: url("Thunder.jpg") center/cover no-repeat;
+}
+
+.misty-bg {
+    background: url("Misty.jpg") center/cover no-repeat;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    .App-title {
+        font-size: 28px;
+    }
+    .temp-container p, .temp-container span {
+        font-size: 40px;
+    }
+}
